@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{titulo}}
+{% endblock %}
+
+{% block content %}
+    <!-- Comentarios en HTML-->
+    <!-- Pagina Index-->
+    {% comment 'Datos de la página Index' %}
+        En esta página se mostrará la página inicial del sistema....
+    {% endcomment %}
+    <h1 class="title">{{titulo}}</h1>
+    {% if mensaje %}
+        <p> Mensaje: {{mensaje}} </p>
+    {% else %}
+        <strong>El mensaje no tiene contenido...</strong>
+    {% endif %}
+
+    <p>28/12/2022 </p>
+{% endblock %}
